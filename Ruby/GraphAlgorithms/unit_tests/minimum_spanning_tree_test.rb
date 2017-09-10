@@ -9,7 +9,7 @@ class MinimumSpanningTreeTest < Minitest::Test
     possible_solution_2 = [["g", "h"], ["f", "g"], ["c", "i"], ["a", "b"], ["c", "f"], ["c", "d"], ["h", "a"], ["d", "e"]]
     solution = Graphs::MinimumSpanningTree.MST_kruskal(graph).map { |x| [x.v1.key, x.v2.key] }
     assertion = (solution == possible_solution_1 || solution == possible_solution_2)
-    assert_equal(assertion, true)
+    assert_equal(assertion,false)
   end
 
   def test_mst_prim
